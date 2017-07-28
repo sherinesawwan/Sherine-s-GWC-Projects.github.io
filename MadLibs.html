@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body background= "https://s-media-cache-ak0.pinimg.com/736x/8d/4d/13/8d4d1328a948eb84647462f4fdeb28c6--wallpaper-backgrounds-iphone-backgrounds.jpg">
+
+    <h1> <center> <font face="snell roundhand, cursive" size="7" color="white"> Mad Libs </center> </font> </h1>
+    <p> <center> <font color="black"> By Izabella and Sherine </center> </p>
+
+<center>    Noun: <input type="text" id="noun"> <br>
+  Verb: <input type="text" name="verb" id="verb"> <br>
+  Verb: <input type="text" name="verb" id="verb"> <br>
+  Verb: <input type="text" name="verb" id="verb"> <br>
+    Verb: <input type="text" name="verb" id="verb"><br>
+    Noun: <input type="text" name="noun" id="noun"><br>
+    Verb: <input type="text" name="verb" id="verb"><br>
+    Adjective: <input type="text" name="adjective" id="adjective"><br>
+    <button id="launch">launch</button>
+    <div id="story"></div>
+</center>
+
+<script>
+alert ("Welcome to our game! Have fun!")
+
+</script>
+<script>
+var noun = document.querySelector("#noun");
+var verb = document.querySelector("#verb");
+var noun = document.querySelector("#noun");
+var verb = document.querySelector("#verb");
+var adjective = document.querySelector("#adjective");
+var story = document.querySelector("#story");
+var launch = document.querySelector("#launch");
+launch.addEventListener("click", writeStory, false);
+
+function writeStory(){
+var launchedStory = "";
+launchedStory += "<p> Do you want to build a " + noun.value + "? </p>";
+launchedStory += "<p> Come on let's go and" + verb.value + ". </p>";
+launchedStory += "<p> I never see " + noun.value + " anymore </p>";
+launchedStory +=  verb.value + "<p> out the door.</p>";
+launchedStory += "<p> It's like you've gone" + adjective.value + ". </p>"
+story.innerHTML = launchedStory;
+}
+
+</script>
+  </body>
+</html>
